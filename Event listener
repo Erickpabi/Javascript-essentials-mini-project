@@ -1,0 +1,31 @@
+<!DOCTYPE hmtl>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Js essentials</title>
+</head>
+<body>
+<select name="cars" onclick="console.log('you clicked me')">
+<option value="volvo">Volvo</option>
+<option value="Ford">Ford</option>
+<option value="Fiat">Fiat</option>
+<option value="Toyota">Toyota</option>
+</select>
+
+<script src="event.js"></script>
+</body>
+</html>
+
+
+//event.js
+var select=document.getElementsByName('cars')[0];
+select.onclick=function(event){
+console.log(event);
+};
+
+function ClickCallback(event){
+console.log('clicked by add event listener');
+}
+
+select.addEventListener('click',ClickCallback);
+select.removeEventListener('click',ClickCallback);
