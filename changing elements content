@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Javascript</title>
+</head>
+
+<body>
+<p id="hello">Hello world</p>
+<p class="pClass">123<p>
+<p data-content="123">345</p>
+<h1>Javascript <span>Hello</span>
+</h1>
+<script src="myapp.js"></script>
+
+
+//Javascript file is in the body to allow for faster processing
+
+
+//myapp.js
+
+var h=document.getElementById('hello');
+h.innerText="new world";
+h.innerHTML += "order <span> hello world</span>";
+h.outerHTML='<h2 id="hello">new world order <span><hello world</span></h2>';
+var spanH1=document.querySelectorAll('h1 span');
+spanH1[0].innerHTML="new text here!!";
