@@ -1,0 +1,12 @@
+var classRegister=["Henry","Emmanuel","Assibey","Jeffrey"];
+
+for(var i=0;i<classRegister.length;i++){
+console.log(classRegister[i]);
+}
+
+//Inverse 
+
+for(var i=classRegister.length-1;i>=0;i--){
+console.log(classRegister[i]);
+
+}
