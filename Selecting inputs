@@ -1,0 +1,39 @@
+//index.html file
+
+
+<html>
+
+<head>
+<script src="C:\Users\Gebruiker\Desktop\js\jquery-3.5.1.js"></script>
+<script src="C:\Users\Gebruiker\Desktop\js\main.js"></script>
+<link rel="stylesheet" type="text/css" href="C:\Users\Gebruiker\Desktop\css\style.css">
+</head>
+
+<body>
+<div id="container">
+<input type="text" placeholder="Name" required> </input>
+<br/>
+<input type="text" placeholder="Age"> </input>
+<br/>
+<input type="text" placeholder="E-mail" required > </input>
+<br/>
+<button>Submit</button>
+ 
+</div>
+</body>
+</html>
+
+//style.css file
+.highlight{
+	background-color:#Ff0;
+}
+
+//main.js. We want to higlight only the input type with the name e-mail
+$(document).ready(function(){
+	$('#container input[placeholder=E-mail]').addClass('highlight');
+});
+
+//i want to highlight all the input fields
+$(document).ready(function(){
+	$('#container input).addClass('highlight');
+});
